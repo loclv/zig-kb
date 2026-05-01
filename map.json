@@ -111,5 +111,10 @@
         "description": "I/O as interface, @Type builtins, packed type restrictions."
       }
     ]
+  },
+  {
+    "title": "Ecosystem",
+    "path": "ecosystem/awesome_zig.md",
+    "description": "Curated catalog of libraries, tools, learning resources, and community projects from the Zig ecosystem."
   }
 ]
