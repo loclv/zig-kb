@@ -78,6 +78,11 @@
         "title": "zigdoc",
         "path": "tools/zigdoc.md",
         "description": "CLI documentation browser for std and imported modules."
+      },
+      {
+        "title": "Sig",
+        "path": "tools/sig.md",
+        "description": "Strict Zig — capacity-first memory model and .sig strict-mode compiler."
       }
     ]
   },
