@@ -1,0 +1,95 @@
+[
+  {
+    "title": "Philosophy & Design Goals",
+    "path": "philosophy.md",
+    "description": "The \"Zen of Zig\" and core concepts."
+  },
+  {
+    "title": "Basics",
+    "path": "basics/",
+    "children": [
+      {
+        "title": "Syntax Overview",
+        "path": "basics/syntax.md"
+      },
+      {
+        "title": "Types & Declarations",
+        "path": "basics/types.md"
+      },
+      {
+        "title": "Control Flow",
+        "path": "basics/control_flow.md"
+      }
+    ]
+  },
+  {
+    "title": "Memory Management",
+    "path": "memory/",
+    "children": [
+      {
+        "title": "Allocators",
+        "path": "memory/allocators.md"
+      },
+      {
+        "title": "Pointers & Slices",
+        "path": "memory/pointers.md"
+      },
+      {
+        "title": "Resource Management (defer/errdefer)",
+        "path": "memory/resource_management.md"
+      }
+    ]
+  },
+  {
+    "title": "Error Handling",
+    "path": "errors/error_handling.md",
+    "description": "Error sets, try, catch, and payloads."
+  },
+  {
+    "title": "Comptime",
+    "path": "comptime/comptime_basics.md",
+    "description": "Powerful metaprogramming and compile-time execution."
+  },
+  {
+    "title": "Standard Library Patterns",
+    "path": "stdlib/common_patterns.md",
+    "description": "Common tasks with std."
+  },
+  {
+    "title": "Build System",
+    "path": "build/build_system.md",
+    "description": "Using build.zig."
+  },
+  {
+    "title": "Tools",
+    "path": "tools/",
+    "children": [
+      {
+        "title": "ziglint",
+        "path": "tools/ziglint.md",
+        "description": "Opinionated linting for Zig."
+      },
+      {
+        "title": "zigdoc",
+        "path": "tools/zigdoc.md",
+        "description": "CLI documentation browser for std and imported modules."
+      }
+    ]
+  },
+  {
+    "title": "Migrations",
+    "path": "migrations/",
+    "children": [
+      {
+        "title": "Migrating to 0.15",
+        "path": "migrations/0.15.md",
+        "description": "I/O overhaul, ArrayList changes, usingnamespace removal."
+      },
+      {
+        "title": "Migrating to 0.16",
+        "path": "migrations/0.16.md",
+        "description": "I/O as interface, @Type builtins, packed type restrictions."
+      }
+    ]
+  }
+]
