@@ -17,10 +17,13 @@ A structured, AI-optimized knowledge base for the Zig programming language. Desi
 - [Comptime](comptime/comptime_basics.md) - Powerful metaprogramming and compile-time execution.
 - [Standard Library Patterns](stdlib/common_patterns.md) - Common tasks with `std`.
 - [Build System](build/build_system.md) - Using `build.zig`.
+- [Migrations](migrations/)
+    - [Migrating to 0.15](migrations/0.15.md) - I/O overhaul, ArrayList changes, `usingnamespace` removal.
+    - [Migrating to 0.16](migrations/0.16.md) - I/O as interface, `@Type` builtins, packed type restrictions.
 
 ## How to use this KB
 Each document follows a consistent structure:
-1. **Concept**: High-level explanation.
-2. **Syntax**: Formal representation.
-3. **Examples**: Clear, idiomatic code snippets.
-4. **Agent Tips**: Specific advice for LLMs writing Zig code.
+1. Concept: High-level explanation.
+2. Syntax: Formal representation.
+3. Examples: Clear, idiomatic code snippets.
+4. Agent Tips: Specific advice for LLMs writing Zig code.
