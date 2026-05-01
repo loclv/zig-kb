@@ -16,3 +16,26 @@ Each document follows a consistent structure:
 2. Syntax: Formal representation.
 3. Examples: Clear, idiomatic code snippets.
 4. Agent Tips: Specific advice for LLMs writing Zig code.
+
+## Write the best prompt that save most token
+
+### For Windsurf / Cursor / Claude Code / other AI coding assistants, fetch, rtk, codedb mcp...
+Base on logs. instead of "<link> read and write".
+
+Copy-paste template:
+
+```text
+Fetch <url>. Read meta.md and map.json. Write <path> with YAML frontmatter (name: kebab-case, description: 1-2 sentences with "Must use when..."). Update map.json title/path/description. No intro, no summary, execute only.
+```
+
+Even shorter variant:
+
+```
+Fetch <url>. Read meta.md + map.json. Write <path> with required frontmatter. Patch map.json. No chatter.
+```
+
+Why this saves tokens:
+- Eliminates "read and write", "please", "can you", explanatory fluff.
+- `meta.md + map.json` replaces "read the metadata format rule and the map file".
+- `required frontmatter` relies on the file itself (already in context) instead of restating constraints.
+- `No chatter` suppresses the AI's habit of writing progress summaries.
