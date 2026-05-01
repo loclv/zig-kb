@@ -92,6 +92,11 @@
     ]
   },
   {
+    "title": "libxev",
+    "path": "libraries/libxev.md",
+    "description": "Cross-platform event loop library for non-blocking I/O, timers, and async operations in Zig."
+  },
+  {
     "title": "Migrations",
     "path": "migrations/",
     "children": [
