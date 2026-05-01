@@ -70,6 +70,11 @@
         "description": "Opinionated linting for Zig."
       },
       {
+        "title": "zlint",
+        "path": "tools/zlint.md",
+        "description": "High-performance linter with custom semantic analyzer."
+      },
+      {
         "title": "zigdoc",
         "path": "tools/zigdoc.md",
         "description": "CLI documentation browser for std and imported modules."
