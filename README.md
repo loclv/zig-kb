@@ -31,7 +31,7 @@ Fetch <url>. Read meta.md and map.json. Write <path> with YAML frontmatter (name
 Example:
 
 ```
-Fetch <https://github.com/zigtools/zls>. Read meta.md and map.json. Write <path> with YAML frontmatter (name: kebab-case, description: 1-2 sentences with "Must use when..."). Update map.json title/path/description. No intro, no summary, execute only.
+Fetch <https://raw.githubusercontent.com/zigcc/awesome-zig/refs/heads/main/README.md>. Read meta.md and map.json. Write <path> with YAML frontmatter (name: kebab-case, description: 1-2 sentences with "Must use when..."). Update map.json title/path/description. No intro, no summary, execute only.
 ```
 
 Even shorter variant:
