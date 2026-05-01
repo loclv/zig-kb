@@ -45,3 +45,18 @@ Why this saves tokens:
 - `meta.md + map.json` replaces "read the metadata format rule and the map file".
 - `required frontmatter` relies on the file itself (already in context) instead of restating constraints.
 - `No chatter` suppresses the AI's habit of writing progress summaries.
+
+## Formatter
+Use <https://github.com/loclv/agent-md> to format markdown files.
+After install, run `agent-md <file>` to format a file.
+
+Use with VSCode, Cursor, Windsurf..., press `Cmd+Shift+P` and search for "Preferences: Open Settings (JSON)" and add:
+
+```json
+{
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "loclv.agent-md-formatter"
+  }
+}
+```
