@@ -1,3 +1,8 @@
+---
+name: zig-kb-overview
+description: Master index for the Zig Knowledge Base. Lists all topics including philosophy, syntax, memory, errors, comptime, build system, stdlib patterns, and migration guides.
+---
+
 # Zig Knowledge Base (zig-kb)
 
 A structured, AI-optimized knowledge base for the Zig programming language. Designed to help AI agents understand Zig's unique features, idioms, and best practices.

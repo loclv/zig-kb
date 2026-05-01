@@ -1,3 +1,8 @@
+---
+name: zig-philosophy
+description: Core Zig philosophy and design goals including the Zen of Zig, explicit control flow, explicit memory allocation, comptime over macros, and explicit error handling. Must use when reasoning about Zig design decisions.
+---
+
 # Philosophy & Design Goals
 
 Zig is a general-purpose programming language and toolchain for maintaining robust, optimal, and reusable software.

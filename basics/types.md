@@ -1,3 +1,8 @@
+---
+name: zig-types-declarations
+description: Zig type system covering primitives, arrays, slices, optionals, enums, and tagged unions. Must use when reading or writing Zig files.
+---
+
 # Types & Declarations
 
 Zig is statically typed and provides a rich set of primitives and complex types.
@@ -19,8 +24,8 @@ Zig is statically typed and provides a rich set of primitives and complex types.
 
 ## Arrays and Slices
 
-- **Array**: Fixed length at compile time. `[5]u32`.
-- **Slice**: A pointer and a length. `[]u32` or `[]const u8`.
+- Array: Fixed length at compile time. `[5]u32`.
+- Slice: A pointer and a length. `[]u32` or `[]const u8`.
 
 ```zig
 const arr = [3]u32{ 1, 2, 3 };
@@ -53,6 +58,4 @@ const Payload = union(enum) {
 };
 ```
 
----
-
-**Agent Tip**: Use `usize` for array indexing and pointer arithmetic. Use `[]const u8` for string literals and most string passing.
+Agent Tip: Use `usize` for array indexing and pointer arithmetic. Use `[]const u8` for string literals and most string passing.

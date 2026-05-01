@@ -1,3 +1,8 @@
+---
+name: zig-control-flow
+description: Zig control flow patterns including if/else expressions, while with continue expressions, for loops with index capture, and exhaustive switch statements. Must use when writing Zig control structures.
+---
+
 # Control Flow
 
 Zig provides standard control flow structures with some unique safety features.
@@ -25,7 +30,7 @@ while (i < 10) : (i += 1) {
     // ...
 }
 ```
-The `: (i += 1)` part is the **continue expression**, which is guaranteed to run even if `continue` is called.
+The `: (i += 1)` part is the continue expression, which is guaranteed to run even if `continue` is called.
 
 ## For Loops
 
@@ -51,6 +56,4 @@ switch (value) {
 }
 ```
 
----
-
-**Agent Tip**: Remember that `if` and `while` expect a `bool`, not an integer. For optional types, use the capture syntax: `if (optional) |val|`.
+Agent Tip: Remember that `if` and `while` expect a `bool`, not an integer. For optional types, use the capture syntax: `if (optional) |val|`.

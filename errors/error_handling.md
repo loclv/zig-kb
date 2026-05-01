@@ -1,3 +1,8 @@
+---
+name: zig-error-handling
+description: Zig error handling with explicit error sets, error union types (!), try/catch/if err patterns, and best practices for error propagation. Must use when reading or writing Zig files.
+---
+
 # Error Handling
 
 In Zig, errors are values and must be handled explicitly.
@@ -14,7 +19,7 @@ const FileError = error{
 ```
 
 ## The `!` operator
-The `!` operator creates an **error union type**. `!i32` means the value is either an `i32` or an error.
+The `!` operator creates an error union type. `!i32` means the value is either an `i32` or an error.
 
 ```zig
 fn parseNumber(s: []const u8) !i32 {
@@ -53,6 +58,4 @@ if (parseNumber("123")) |val| {
 }
 ```
 
----
-
-**Agent Tip**: Avoid ignoring errors with `catch unreachable` unless you are absolutely certain (e.g., in a test or a proven-safe invariant). Always bubble up errors with `try` when possible to keep functions flexible.
+Agent Tip: Avoid ignoring errors with `catch unreachable` unless you are absolutely certain (e.g., in a test or a proven-safe invariant). Always bubble up errors with `try` when possible to keep functions flexible.

@@ -1,3 +1,8 @@
+---
+name: zig-syntax-overview
+description: Core Zig syntax covering const/var declarations, function declarations, struct definitions, and doc comment conventions. Must use when reading or writing Zig files.
+---
+
 # Syntax Overview
 
 Zig syntax is designed to be readable and explicit. It heavily borrows from C but cleans up many of its legacy issues.
@@ -44,6 +49,4 @@ const User = struct {
 - `///`: Doc comment for the following symbol.
 - `//!`: Doc comment for the current module.
 
----
-
-**Agent Tip**: Zig uses `CamelCase` for types (including structs) and `snake_case` for functions and variables. Always specify types for clarity unless the inference is obvious.
+Agent Tip: Zig uses `CamelCase` for types (including structs) and `snake_case` for functions and variables. Always specify types for clarity unless the inference is obvious.

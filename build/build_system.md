@@ -1,3 +1,8 @@
+---
+name: zig-build-system
+description: Zig build system fundamentals including build.zig structure, standard targets, optimization options, dependency management with build.zig.zon, and custom build logic. Must use when configuring Zig projects.
+---
+
 # Build System
 
 Zig features a powerful build system written in Zig itself. The configuration file is always `build.zig`.
@@ -30,6 +35,4 @@ pub fn build(b: *std.Build) void {
 ## Adding Dependencies
 Dependencies are managed via `build.zig.zon` and then referenced in `build.zig`.
 
----
-
-**Agent Tip**: The build system allows for complex build-time logic, such as generating source files or running custom commands. Use `b.addModule` to create reusable internal modules.
+Agent Tip: The build system allows for complex build-time logic, such as generating source files or running custom commands. Use `b.addModule` to create reusable internal modules.

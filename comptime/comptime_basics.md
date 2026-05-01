@@ -1,3 +1,8 @@
+---
+name: zig-comptime-basics
+description: Zig compile-time execution and metaprogramming including generic types as functions, comptime parameters, inline loops, and reflection with @typeInfo. Must use when writing generic or metaprogrammed Zig code.
+---
+
 # Comptime
 
 `comptime` is Zig's most powerful feature. it allows executing code at compile time.
@@ -43,6 +48,4 @@ inline for (types) |T| {
 }
 ```
 
----
-
-**Agent Tip**: `comptime` is how Zig achieves "duck typing" for generic code. If a type has the required fields/methods, it will work. Use `@typeInfo` and `@field` for advanced reflection.
+Agent Tip: `comptime` is how Zig achieves "duck typing" for generic code. If a type has the required fields/methods, it will work. Use `@typeInfo` and `@field` for advanced reflection.

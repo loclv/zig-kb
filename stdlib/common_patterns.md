@@ -1,3 +1,8 @@
+---
+name: zig-stdlib-patterns
+description: Common Zig standard library patterns for printing, ArrayList usage, string formatting, hashing, and crypto operations. Must use when reading or writing Zig files that use std.
+---
+
 # Standard Library Patterns
 
 Commonly used patterns in the Zig standard library (`std`).
@@ -35,6 +40,4 @@ var hash: [std.crypto.hash.sha2.Sha256.digest_length]u8 = undefined;
 std.crypto.hash.sha2.Sha256.hash("input data", &hash, .{});
 ```
 
----
-
-**Agent Tip**: The Zig standard library source code is very readable. If you are unsure how a module works, look at its source (usually in `lib/std/`). Use `std.mem` for byte-level operations.
+Agent Tip: The Zig standard library source code is very readable. If you are unsure how a module works, look at its source (usually in `lib/std/`). Use `std.mem` for byte-level operations.

@@ -1,3 +1,8 @@
+---
+name: zig-allocators
+description: Zig memory allocation patterns including GeneralPurposeAllocator, ArenaAllocator, FixedBufferAllocator, and page_allocator. Must use when writing Zig code that allocates memory.
+---
+
 # Allocators
 
 In Zig, memory allocation is explicit. Functions that need to allocate memory usually take an `Allocator` as an argument.
@@ -32,10 +37,8 @@ pub fn main() !void {
 ```
 
 ## When to use what?
-- **Testing**: Use `std.testing.allocator`. It detects leaks automatically.
-- **CLI Tools**: `ArenaAllocator` is often great for simplicity.
-- **Embedded**: `FixedBufferAllocator` or custom static allocators.
+- Testing: Use `std.testing.allocator`. It detects leaks automatically.
+- CLI Tools: `ArenaAllocator` is often great for simplicity.
+- Embedded: `FixedBufferAllocator` or custom static allocators.
 
----
-
-**Agent Tip**: If you are writing a library function that allocates, **always** accept an `Allocator`. Never use `page_allocator` inside a reusable library.
+Agent Tip: If you are writing a library function that allocates, always accept an `Allocator`. Never use `page_allocator` inside a reusable library.
