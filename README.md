@@ -24,6 +24,7 @@ A structured, AI-optimized knowledge base for the Zig programming language. Desi
 - [Build System](build/build_system.md) - Using `build.zig`.
 - [Tools](tools/)
     - [ziglint](tools/ziglint.md) - Opinionated linting for Zig.
+    - [zigdoc](tools/zigdoc.md) - CLI documentation browser for std and imported modules.
 - [Migrations](migrations/)
     - [Migrating to 0.15](migrations/0.15.md) - I/O overhaul, ArrayList changes, `usingnamespace` removal.
     - [Migrating to 0.16](migrations/0.16.md) - I/O as interface, `@Type` builtins, packed type restrictions.
