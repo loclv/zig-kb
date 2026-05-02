@@ -5,7 +5,7 @@
     "description": "The \"Zen of Zig\" and core concepts."
   },
   {
-    "title": "Basics",
+    "description": "Basics",
     "path": "basics/",
     "children": [
       {
@@ -26,7 +26,7 @@
     ]
   },
   {
-    "title": "Memory Management",
+    "description": "Memory Management",
     "path": "memory/",
     "children": [
       {
@@ -47,27 +47,23 @@
     ]
   },
   {
-    "title": "Error Handling",
-    "path": "errors/error_handling.md",
-    "description": "Error sets, try, catch, and payloads."
+    "description": "Error Handling",
+    "path": "errors/error_handling.md"
   },
   {
-    "title": "Comptime",
-    "path": "comptime/comptime_basics.md",
-    "description": "Powerful metaprogramming and compile-time execution."
+    "description": "Comptime",
+    "path": "comptime/comptime_basics.md"
   },
   {
-    "title": "Standard Library Patterns",
-    "path": "stdlib/common_patterns.md",
-    "description": "Common tasks with std."
+    "description": "Standard Library Patterns",
+    "path": "stdlib/common_patterns.md"
   },
   {
-    "title": "Build System",
-    "path": "build/build_system.md",
-    "description": "Using build.zig."
+    "description": "Build System",
+    "path": "build/build_system.md"
   },
   {
-    "title": "Tools",
+    "description": "Tools",
     "path": "tools/",
     "children": [
       {
@@ -98,12 +94,11 @@
     ]
   },
   {
-    "title": "libxev",
-    "path": "libraries/libxev.md",
-    "description": "Cross-platform event loop library for non-blocking I/O, timers, and async operations in Zig."
+    "description": "libxev",
+    "path": "libraries/libxev.md"
   },
   {
-    "title": "Migrations",
+    "description": "Migrations",
     "path": "migrations/",
     "children": [
       {
@@ -119,14 +114,12 @@
     ]
   },
   {
-    "title": "Ecosystem",
-    "path": "ecosystem/awesome_zig.md",
-    "description": "Curated catalog of libraries, tools, learning resources, and community projects from the Zig ecosystem."
+    "description": "Ecosystem",
+    "path": "ecosystem/awesome_zig.md"
   },
   {
-    "title": "Samples",
+    "description": "Samples",
     "path": "samples/",
-    "description": "Hands-on code examples covering hello world, C interop, generics, cURL, and more.",
     "children": [
       {
         "name": "overview",

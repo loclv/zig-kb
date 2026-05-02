@@ -11,6 +11,8 @@ A structured, AI-optimized knowledge base for the Zig programming language. Desi
 Human and AI agents can use "./map.json" to navigate the knowledge base.
 
 ## How to use this KB
+All documents is store at "<root>/docs/" folder.
+
 Each document follows a consistent structure:
 1. Concept: High-level explanation.
 2. Syntax: Formal representation.
