@@ -116,5 +116,16 @@
     "title": "Ecosystem",
     "path": "ecosystem/awesome_zig.md",
     "description": "Curated catalog of libraries, tools, learning resources, and community projects from the Zig ecosystem."
+  },
+  {
+    "title": "Samples",
+    "path": "samples/",
+    "description": "Hands-on code examples covering hello world, C interop, generics, cURL, and more.",
+    "children": [
+      {
+        "title": "Overview",
+        "path": "samples/samples.md"
+      }
+    ]
   }
 ]

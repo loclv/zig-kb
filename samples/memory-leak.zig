@@ -1,0 +1,13 @@
+const std = @import("std");
+
+pub fn main() !void {
+    var debug_allocator = std.heap.DebugAllocator(.{}){};
+    defer std.debug.assert(debug_allocator.deinit() == .ok);
+
+    const gpa = debug_allocator.allocator();
+
+    const u32_ptr = try gpa.create(u32);
+    _ = u32_ptr; // silences unused variable error
+
+    // oops I forgot to free!
+}
