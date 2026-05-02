@@ -9,15 +9,18 @@
     "path": "basics/",
     "children": [
       {
-        "title": "Syntax Overview",
+        "name": "zig-syntax-overview",
+        "description": "Core Zig syntax covering const/var declarations, function declarations, struct definitions, and doc comment conventions. Must use when reading or writing Zig files.",
         "path": "basics/syntax.md"
       },
       {
-        "title": "Types & Declarations",
+        "name": "types-declarations",
+        "description": "Types and declarations in Zig.",
         "path": "basics/types.md"
       },
       {
-        "title": "Control Flow",
+        "name": "control-flow",
+        "description": "Control flow in Zig.",
         "path": "basics/control_flow.md"
       }
     ]
@@ -27,15 +30,18 @@
     "path": "memory/",
     "children": [
       {
-        "title": "Allocators",
+        "name": "allocators",
+        "description": "Allocators in Zig.",
         "path": "memory/allocators.md"
       },
       {
-        "title": "Pointers & Slices",
+        "name": "pointers-and-slices",
+        "description": "Pointers & slices in Zig.",
         "path": "memory/pointers.md"
       },
       {
-        "title": "Resource Management (defer/errdefer)",
+        "name": "resource-management",
+        "description": "Resource management with defer and errdefer in Zig.",
         "path": "memory/resource_management.md"
       }
     ]
@@ -65,29 +71,29 @@
     "path": "tools/",
     "children": [
       {
-        "title": "ziglint",
-        "path": "tools/ziglint.md",
-        "description": "Opinionated linting for Zig."
+        "name": "ziglint",
+        "description": "Opinionated linting for Zig.",
+        "path": "tools/ziglint.md"
       },
       {
-        "title": "zlint",
-        "path": "tools/zlint.md",
-        "description": "High-performance linter with custom semantic analyzer."
+        "name": "zlint",
+        "description": "High-performance linter with custom semantic analyzer.",
+        "path": "tools/zlint.md"
       },
       {
-        "title": "zigdoc",
-        "path": "tools/zigdoc.md",
-        "description": "CLI documentation browser for std and imported modules."
+        "name": "zigdoc",
+        "description": "CLI documentation browser for std and imported modules.",
+        "path": "tools/zigdoc.md"
       },
       {
-        "title": "Sig",
-        "path": "tools/sig.md",
-        "description": "Strict Zig — capacity-first memory model and .sig strict-mode compiler."
+        "name": "sig",
+        "description": "Strict Zig — capacity-first memory model and .sig strict-mode compiler.",
+        "path": "tools/sig.md"
       },
       {
-        "title": "ZLS",
-        "path": "tools/zls.md",
-        "description": "Official Language Server Protocol implementation for Zig IDE features."
+        "name": "zls",
+        "description": "Official Language Server Protocol implementation for Zig IDE features.",
+        "path": "tools/zls.md"
       }
     ]
   },
@@ -101,14 +107,14 @@
     "path": "migrations/",
     "children": [
       {
-        "title": "Migrating to 0.15",
-        "path": "migrations/0.15.md",
-        "description": "I/O overhaul, ArrayList changes, usingnamespace removal."
+        "name": "migrating-to-0.15",
+        "description": "I/O overhaul, ArrayList changes, usingnamespace removal.",
+        "path": "migrations/0.15.md"
       },
       {
-        "title": "Migrating to 0.16",
-        "path": "migrations/0.16.md",
-        "description": "I/O as interface, @Type builtins, packed type restrictions."
+        "name": "migrating-to-0.16",
+        "description": "I/O as interface, @Type builtins, packed type restrictions.",
+        "path": "migrations/0.16.md"
       }
     ]
   },
@@ -123,8 +129,44 @@
     "description": "Hands-on code examples covering hello world, C interop, generics, cURL, and more.",
     "children": [
       {
-        "title": "Overview",
+        "name": "overview",
+        "description": "Overview of Zig code samples.",
         "path": "samples/samples.md"
+      },
+      {
+        "name": "hello-world",
+        "description": "Minimal hello world example.",
+        "path": "samples/hello-world.zig"
+      },
+      {
+        "name": "windows-message-box",
+        "description": "Windows API interop via extern functions.",
+        "path": "samples/windows-msgbox.zig"
+      },
+      {
+        "name": "memory-leak-detection",
+        "description": "DebugAllocator leak detection demo.",
+        "path": "samples/memory-leak.zig"
+      },
+      {
+        "name": "c-interoperability",
+        "description": "raylib C header import example.",
+        "path": "samples/c-interop.zig"
+      },
+      {
+        "name": "zigg-zagg",
+        "description": "Fizzbuzz-style demo.",
+        "path": "samples/ziggzagg.zig"
+      },
+      {
+        "name": "generic-types",
+        "description": "Generic queue implementation with tests.",
+        "path": "samples/generic-type.zig"
+      },
+      {
+        "name": "curl-from-zig",
+        "description": "cURL usage from Zig.",
+        "path": "samples/curl.zig"
       }
     ]
   }
