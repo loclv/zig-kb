@@ -10,6 +10,15 @@ A structured, AI-optimized knowledge base for the Zig programming language. Desi
 ## Table of Contents
 Human and AI agents can use "./map.json" to navigate the knowledge base.
 
+## Regenerate `map.json`
+Run the Zig script to rebuild `map.json` from all files under `docs/`:
+
+```bash
+zig run update_map.zig
+```
+
+This scans every Markdown and Zig file, extracts metadata (frontmatter for `.md`, leading comments for `.zig`), and rewrites `map.json` with updated `name`, `description`, and `path` fields.
+
 ## How to use this KB
 All documents is store at "<root>/docs/" folder.
 

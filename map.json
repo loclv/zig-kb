@@ -1,10 +1,5 @@
 [
   {
-    "title": "Philosophy & Design Goals",
-    "path": "philosophy.md",
-    "description": "The \"Zen of Zig\" and core concepts."
-  },
-  {
     "description": "Basics",
     "path": "basics/",
     "children": [
@@ -14,152 +9,199 @@
         "path": "basics/syntax.md"
       },
       {
-        "name": "types-declarations",
-        "description": "Types and declarations in Zig.",
-        "path": "basics/types.md"
+        "name": "zig-control-flow",
+        "description": "Zig control flow patterns including if/else expressions, while with continue expressions, for loops with index capture, and exhaustive switch statements. Must use when writing Zig control structures.",
+        "path": "basics/control_flow.md"
       },
       {
-        "name": "control-flow",
-        "description": "Control flow in Zig.",
-        "path": "basics/control_flow.md"
+        "name": "zig-types-declarations",
+        "description": "Zig type system covering primitives, arrays, slices, optionals, enums, and tagged unions. Must use when reading or writing Zig files.",
+        "path": "basics/types.md"
       }
     ]
   },
   {
-    "description": "Memory Management",
-    "path": "memory/",
+    "description": "Build",
+    "path": "build/",
     "children": [
       {
-        "name": "allocators",
-        "description": "Allocators in Zig.",
-        "path": "memory/allocators.md"
-      },
-      {
-        "name": "pointers-and-slices",
-        "description": "Pointers & slices in Zig.",
-        "path": "memory/pointers.md"
-      },
-      {
-        "name": "resource-management",
-        "description": "Resource management with defer and errdefer in Zig.",
-        "path": "memory/resource_management.md"
+        "name": "zig-build-system",
+        "description": "Zig build system fundamentals including build.zig structure, standard targets, optimization options, dependency management with build.zig.zon, and custom build logic. Must use when configuring Zig projects.",
+        "path": "build/build_system.md"
       }
     ]
-  },
-  {
-    "description": "Error Handling",
-    "path": "errors/error_handling.md"
   },
   {
     "description": "Comptime",
-    "path": "comptime/comptime_basics.md"
-  },
-  {
-    "description": "Standard Library Patterns",
-    "path": "stdlib/common_patterns.md"
-  },
-  {
-    "description": "Build System",
-    "path": "build/build_system.md"
-  },
-  {
-    "description": "Tools",
-    "path": "tools/",
+    "path": "comptime/",
     "children": [
       {
-        "name": "ziglint",
-        "description": "Opinionated linting for Zig.",
-        "path": "tools/ziglint.md"
-      },
-      {
-        "name": "zlint",
-        "description": "High-performance linter with custom semantic analyzer.",
-        "path": "tools/zlint.md"
-      },
-      {
-        "name": "zigdoc",
-        "description": "CLI documentation browser for std and imported modules.",
-        "path": "tools/zigdoc.md"
-      },
-      {
-        "name": "sig",
-        "description": "Strict Zig — capacity-first memory model and .sig strict-mode compiler.",
-        "path": "tools/sig.md"
-      },
-      {
-        "name": "zls",
-        "description": "Official Language Server Protocol implementation for Zig IDE features.",
-        "path": "tools/zls.md"
+        "name": "zig-comptime-basics",
+        "description": "Zig compile-time execution and metaprogramming including generic types as functions, comptime parameters, inline loops, and reflection with @typeInfo. Must use when writing generic or metaprogrammed Zig code.",
+        "path": "comptime/comptime_basics.md"
       }
     ]
   },
   {
-    "description": "libxev",
-    "path": "libraries/libxev.md"
+    "description": "Ecosystem",
+    "path": "ecosystem/",
+    "children": [
+      {
+        "name": "zig-awesome-ecosystem",
+        "description": "Curated catalog of libraries, tools, learning resources, and community projects from the Zig ecosystem. Must use when discovering third-party Zig packages, frameworks, or development tools.",
+        "path": "ecosystem/awesome_zig.md"
+      }
+    ]
+  },
+  {
+    "description": "Errors",
+    "path": "errors/",
+    "children": [
+      {
+        "name": "zig-error-handling",
+        "description": "Zig error handling with explicit error sets, error union types (!), try/catch/if err patterns, and best practices for error propagation. Must use when reading or writing Zig files.",
+        "path": "errors/error_handling.md"
+      }
+    ]
+  },
+  {
+    "description": "Libraries",
+    "path": "libraries/",
+    "children": [
+      {
+        "name": "zig-libxev",
+        "description": "Cross-platform event loop library for non-blocking I/O, timers, signals, and async operations in Zig with zero runtime allocations and a C-compatible API. Must use when building async networking, event-driven applications, or integrating Zig event loops across macOS, Linux, and WebAssembly.",
+        "path": "libraries/libxev.md"
+      }
+    ]
+  },
+  {
+    "description": "Memory",
+    "path": "memory/",
+    "children": [
+      {
+        "name": "zig-allocators",
+        "description": "Zig memory allocation patterns including GeneralPurposeAllocator, ArenaAllocator, FixedBufferAllocator, and page_allocator. Must use when writing Zig code that allocates memory.",
+        "path": "memory/allocators.md"
+      },
+      {
+        "name": "zig-resource-management",
+        "description": "Zig resource cleanup patterns using defer and errdefer for guaranteed cleanup on block exit and error paths. Must use when writing Zig functions with multiple allocation or file operations.",
+        "path": "memory/resource_management.md"
+      }
+    ]
   },
   {
     "description": "Migrations",
     "path": "migrations/",
     "children": [
       {
-        "name": "migrating-to-0.15",
-        "description": "I/O overhaul, ArrayList changes, usingnamespace removal.",
+        "name": "zig-migration-0.15",
+        "description": "Breaking changes and migration guide for Zig 0.15 including I/O overhaul, ArrayList changes, usingnamespace removal, format string changes, and std.builtin.Type field renames. Must use when updating code from pre-0.15 to 0.15+.",
         "path": "migrations/0.15.md"
       },
       {
-        "name": "migrating-to-0.16",
-        "description": "I/O as interface, @Type builtins, packed type restrictions.",
+        "name": "zig-migration-0.16",
+        "description": "Breaking changes and migration guide for Zig 0.16 including I/O as interface, @Type builtins split, packed type restrictions, vector indexing rules, and @cImport migration to build.zig. Must use when updating code from 0.15 to 0.16+.",
         "path": "migrations/0.16.md"
       }
     ]
   },
   {
-    "description": "Ecosystem",
-    "path": "ecosystem/awesome_zig.md"
+    "name": "zig-philosophy",
+    "description": "Core Zig philosophy and design goals including the Zen of Zig, explicit control flow, explicit memory allocation, comptime over macros, and explicit error handling. Must use when reasoning about Zig design decisions.",
+    "path": "philosophy.md"
   },
   {
     "description": "Samples",
     "path": "samples/",
     "children": [
       {
-        "name": "overview",
-        "description": "Overview of Zig code samples.",
-        "path": "samples/samples.md"
-      },
-      {
-        "name": "hello-world",
-        "description": "Minimal hello world example.",
-        "path": "samples/hello-world.zig"
-      },
-      {
-        "name": "windows-message-box",
-        "description": "Windows API interop via extern functions.",
-        "path": "samples/windows-msgbox.zig"
-      },
-      {
-        "name": "memory-leak-detection",
-        "description": "DebugAllocator leak detection demo.",
-        "path": "samples/memory-leak.zig"
-      },
-      {
-        "name": "c-interoperability",
-        "description": "raylib C header import example.",
-        "path": "samples/c-interop.zig"
-      },
-      {
-        "name": "zigg-zagg",
-        "description": "Fizzbuzz-style demo.",
+        "name": "ziggzagg",
+        "description": "Zig code sample: ziggzagg.",
         "path": "samples/ziggzagg.zig"
       },
       {
-        "name": "generic-types",
-        "description": "Generic queue implementation with tests.",
+        "name": "curl",
+        "description": "compile with `zig build-exe zig-curl-test.zig --library curl --library c $(pkg-config --cflags libcurl)`",
+        "path": "samples/curl.zig"
+      },
+      {
+        "name": "hello-world",
+        "description": "Zig code sample: hello-world.",
+        "path": "samples/hello-world.zig"
+      },
+      {
+        "name": "samples",
+        "description": "basic samples",
+        "path": "samples/samples.md"
+      },
+      {
+        "name": "generic-type",
+        "description": "Zig code sample: generic-type.",
         "path": "samples/generic-type.zig"
       },
       {
-        "name": "curl-from-zig",
-        "description": "cURL usage from Zig.",
-        "path": "samples/curl.zig"
+        "name": "c-interop",
+        "description": "build with `zig build-exe c-interop.zig -lc -lraylib`",
+        "path": "samples/c-interop.zig"
+      },
+      {
+        "name": "windows-msgbox",
+        "description": "Zig code sample: windows-msgbox.",
+        "path": "samples/windows-msgbox.zig"
+      },
+      {
+        "name": "memory-leak",
+        "description": "Zig code sample: memory-leak.",
+        "path": "samples/memory-leak.zig"
+      }
+    ]
+  },
+  {
+    "description": "Stdlib",
+    "path": "stdlib/",
+    "children": [
+      {
+        "name": "zig-stdlib-patterns",
+        "description": "Common Zig standard library patterns for printing, ArrayList usage, string formatting, hashing, and crypto operations. Must use when reading or writing Zig files that use std.",
+        "path": "stdlib/common_patterns.md"
+      },
+      {
+        "name": "zig-std-module",
+        "description": "The Zig standard library entry point (`std.zig`). Documents re-exported types, module imports, and the compile-time `Options` struct. Must use when navigating or understanding std library structure.",
+        "path": "stdlib/std_module.md"
+      }
+    ]
+  },
+  {
+    "description": "Tools",
+    "path": "tools/",
+    "children": [
+      {
+        "name": "zig-linting-with-zlint",
+        "description": ">",
+        "path": "tools/zlint.md"
+      },
+      {
+        "name": "zig-documentation-with-zigdoc",
+        "description": "CLI tool for browsing Zig standard library and third-party module documentation from the terminal. Must use when looking up symbol signatures, doc comments, or exploring APIs without leaving the editor.",
+        "path": "tools/zigdoc.md"
+      },
+      {
+        "name": "zig-linting-with-ziglint",
+        "description": "ziglint rule reference, configuration via .ziglint.zon, inline ignores, and CLI usage. Must use when enforcing style, catching common anti-patterns, or setting up CI linting for Zig projects.",
+        "path": "tools/ziglint.md"
+      },
+      {
+        "name": "zig-language-server",
+        "description": "The official Language Server Protocol implementation for Zig, providing completions, hover, goto definition, formatting, and semantic highlighting. Must use when setting up IDE support or editor integration for Zig development.",
+        "path": "tools/zls.md"
+      },
+      {
+        "name": "sig-strict-zig",
+        "description": "Capacity-first memory model layer on top of the Zig compiler. Drop-in replacement enforcing caller-owned buffers, bounded containers, and visible allocations via .sig strict-mode files.",
+        "path": "tools/sig.md"
       }
     ]
   }
