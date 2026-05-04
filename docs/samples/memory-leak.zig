@@ -1,3 +1,4 @@
+// Demonstrates memory leak detection using DebugAllocator. Must use when setting up memory tracking and leak detection in Zig applications.
 const std = @import("std");
 
 pub fn main() !void {

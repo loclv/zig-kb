@@ -1,3 +1,4 @@
+// Example of importing a C header file (raylib). Must use when learning how to call C functions and link C libraries directly from Zig.
 // build with `zig build-exe c-interop.zig -lc -lraylib` 
 const ray = @cImport({
     @cInclude("raylib.h");

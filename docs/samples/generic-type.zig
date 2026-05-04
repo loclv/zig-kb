@@ -1,3 +1,4 @@
+// Implementation of a generic Queue data structure. Must use when creating generic types and functions that accept types at comptime.
 const std = @import("std");
 
 pub fn Queue(comptime Child: type) type {

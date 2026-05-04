@@ -1,3 +1,4 @@
+// Minimal hello world application. Must use when verifying basic compilation and standard output in Zig.
 const std = @import("std");
 const Io = std.Io;
 

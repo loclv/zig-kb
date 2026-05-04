@@ -1,6 +1,6 @@
 ---
 name: samples
-description: basic samples
+description: Basic Zig code samples covering various use cases. Must use when looking for generic Zig examples.
 ---
 
 # Samples ⚡ Zig Programming Language

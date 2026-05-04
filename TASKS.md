@@ -1,3 +1,8 @@
+---
+name: zig-kb-tasks
+description: Tracking list of completed and pending tasks for the Zig knowledge base. Must use when checking progress or finding the next task to work on.
+---
+
 # Tasks
 
 ## Completed
@@ -12,10 +17,10 @@
 
 ## TODO
 
-- [ ] Fix `map.json` `description` for `tools/zlint.md` (currently shows `">"` instead of full multi-line text)
-- [ ] Improve generic sample descriptions in `map.json` (e.g., ziggzagg, hello-world, generic-type)
-- [ ] Expand `docs/libraries/libxev.md` with code examples and Agent Tips
-- [ ] Add missing topic docs: concurrency/threads, C interop, testing patterns, `build.zig.zon` dependencies
+- [x] Fix `map.json` `description` for `tools/zlint.md` (currently shows `">"` instead of full multi-line text)
+- [x] Improve generic sample descriptions in `map.json` (e.g., ziggzagg, hello-world, generic-type)
+- [x] Expand `docs/libraries/libxev.md` with code examples and Agent Tips
+- [x] Add missing topic docs: concurrency/threads, C interop, testing patterns, `build.zig.zon` dependencies
 - [ ] Run `agent-md` formatter on all `.md` files
-- [ ] Review and clean up test log files (`test_*.zig.log`)
-- [ ] Add missing frontmatter to `docs/samples/samples.md` and any other `.md` files missing it
+- [x] Review and clean up test log files (`test_*.zig.log`)
+- [x] Add missing frontmatter to `docs/samples/samples.md` and any other `.md` files missing it

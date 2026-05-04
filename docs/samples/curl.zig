@@ -1,3 +1,4 @@
+// Example of using libcurl from Zig via C interop. Must use when needing to perform HTTP requests using curl and handling the response buffer.
 // compile with `zig build-exe zig-curl-test.zig --library curl --library c $(pkg-config --cflags libcurl)` 
 const std = @import("std");
 const cURL = @cImport({

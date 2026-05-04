@@ -1,9 +1,6 @@
 ---
 name: zig-linting-with-zlint
-description: >
-  ZLint is an opinionated, high-performance linter for Zig with its own semantic
-  analyzer. Must use when linting Zig projects, configuring lint rules via zlint.json,
-  or setting up CI linting with disable directives.
+description: ZLint is an opinionated, high-performance linter for Zig with its own semantic analyzer. Must use when linting Zig projects, configuring lint rules via zlint.json, or setting up CI linting with disable directives.
 ---
 
 # zlint

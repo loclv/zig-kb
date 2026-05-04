@@ -1,3 +1,4 @@
+// Basic control flow sample printing FizzBuzz style. Must use when looking for examples of while loops, if expressions, and basic console output.
 const std = @import("std");
 
 pub fn main() !void {
